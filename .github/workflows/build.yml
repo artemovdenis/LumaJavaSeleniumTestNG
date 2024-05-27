@@ -4,6 +4,14 @@ on:
   pull_request:
     branches: main
 
+permissions:
+  contents: wright
+  pages: wright
+  id-token: wright
+  actions: read
+  checks: wright
+  
+
 jobs:
   build:
     name: Buld on
