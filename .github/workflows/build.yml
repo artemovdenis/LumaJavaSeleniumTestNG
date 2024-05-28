@@ -16,7 +16,7 @@ jobs:
   build:
     name: Buld on
 
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
     - name: Clone code from repo
