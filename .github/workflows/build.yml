@@ -16,7 +16,11 @@ jobs:
   build:
     name: Buld on
 
-    runs-on: macos-latest
+    strategy:
+      matrix:
+        version: [10, 12, 14]
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
 
     steps:
     - name: Clone code from repo
